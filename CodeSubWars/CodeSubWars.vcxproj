@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{40B1C9B2-CF73-49CB-ABE6-8CB0C40F71B7}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.32002.118</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+    <OutDir>$(SolutionDir)\</OutDir>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\mkspecs\win32-msvc;./source;./include;../boost;../arstd;../solid-3.5.4/include;$(PYTHON_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UNICODE;QT_NO_DEBUG;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/CodeSubWars.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtcore.lib;qtgui.lib;qtmain.lib;qtopengl.lib;opengl32.lib;glu32.lib;imm32.lib;wsock32.lib;arstd.lib;solid.lib;python310.lib;boost_python310-vc143-mt-x64-1_79.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>CodeSubWars.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>./lib;../arstd/lib;../solid-3.5.4/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\Release/CodeSubWars.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/CodeSubWars.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <PostBuildEvent>
+      <Message>Packing $(TargetFileName)</Message>
+      <Command>$(SolutionDir)/tools/upx.exe --best $(TargetFileName)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Message>Updating RevisionNumber</Message>
+      <Command>$(SolutionDir)tools\subwcrev\subwcrev.exe $(SolutionDir) $(SolutionDir)Source\Constants.rev $(SolutionDir)Source\Constants.cpp</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\mkspecs\win32-msvc;./source;./include;../boost;../arstd;../solid-3.5.4/include;$(PYTHON_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UNICODE;QT_NO_DEBUG;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/CodeSubWars.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qt5core.lib;qt5gui.lib;qt5widgets.lib;qt5opengl.lib;opengl32.lib;glu32.lib;imm32.lib;wsock32.lib;arstd.lib;broad.lib;complex.lib;convex.lib;qhull.lib;solid.lib;python3.lib;python310.lib;boost_python310-vc143-mt-x64-1_79.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>CodeSubWars.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>./lib;$(QTDIR)\lib;../arstd/lib;../boost/stage/lib;../solid-3.5.4/lib;$(PYTHON_ROOT)\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\Release/CodeSubWars.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/CodeSubWars.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Packing $(TargetFileName)</Message>
+      <Command>$(SolutionDir)/tools/upx.exe --best $(TargetFileName)</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Message>Updating Source/BuildDetails.cpp</Message>
+      <Command>createBuildDetails.py</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\mkspecs\win32-msvc;./source;./include;../boost;../arstd;../solid-3.5.4/include;$(PYTHON_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/CodeSubWars.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtcored.lib;qtguid.lib;qtmaind.lib;qtopengld.lib;opengl32.lib;glu32.lib;imm32.lib;wsock32.lib;arstdd.lib;solidd.lib;python310.lib;boost_python310-vc143-mt-x64-1_79.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>CodeSubWarsD.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>./lib;../arstd/lib;../solid-3.5.4/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/CodeSubWarsD.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/CodeSubWars.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <PreBuildEvent>
+      <Message>Updating RevisionNumber</Message>
+      <Command>$(SolutionDir)tools\subwcrev\subwcrev.exe $(SolutionDir) $(SolutionDir)Source\Constants.rev $(SolutionDir)Source\Constants.cpp</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\mkspecs\win32-msvc;./source;./include;../boost;../arstd;../solid-3.5.4/include;$(PYTHON_ROOT)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PrecompiledHeader.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/CodeSubWars.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qt5cored.lib;qt5guid.lib;qt5widgetsd.lib;qt5opengld.lib;opengl32.lib;glu32.lib;imm32.lib;wsock32.lib;arstdd.lib;broadd.lib;complexd.lib;convexd.lib;qhulld.lib;solidd.lib;python3.lib;python310.lib;boost_python310-vc143-mt-gd-x64-1_79.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>CodeSubWarsD.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>./lib;$(QTDIR)\lib;../arstd/lib;../boost/stage/lib;../solid-3.5.4/lib;$(PYTHON_ROOT)\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/CodeSubWarsD.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/CodeSubWars.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Updating Source/BuildDetails.cpp</Message>
+      <Command>createBuildDetails.py</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\AboutDialog.cpp" />
+    <ClCompile Include="Source\ActiveRock.cpp" />
+    <ClCompile Include="Source\BlackHole.cpp" />
+    <ClCompile Include="Source\BlueTorpedo.cpp" />
+    <ClCompile Include="Source\Border.cpp" />
+    <ClCompile Include="Source\BuildDetails.cpp" />
+    <ClCompile Include="Source\CodeSubwarsMainWindow.cpp" />
+    <ClCompile Include="Source\Constants.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWAbsRotCommand.cpp" />
+    <ClCompile Include="Source\CSWAbsRotController.cpp" />
+    <ClCompile Include="Source\CSWActiveRock.cpp" />
+    <ClCompile Include="Source\CSWActiveSonar.cpp" />
+    <ClCompile Include="Source\CSWActiveSonarVisualizer.cpp" />
+    <ClCompile Include="Source\CSWActuator.cpp" />
+    <ClCompile Include="Source\CSWAxialInclRotateCommand.cpp" />
+    <ClCompile Include="Source\CSWAxialInclRotationController.cpp" />
+    <ClCompile Include="Source\CSWBattleStatistics.cpp" />
+    <ClCompile Include="Source\CSWBlackHole.cpp" />
+    <ClCompile Include="Source\CSWBorder.cpp" />
+    <ClCompile Include="Source\CSWCamera.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWCollideable.cpp" />
+    <ClCompile Include="Source\CSWCollisionDetectedMessage.cpp" />
+    <ClCompile Include="Source\CSWCommandable.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWCommands.cpp" />
+    <ClCompile Include="Source\CSWControlCenter.cpp" />
+    <ClCompile Include="Source\CSWControlCommand.cpp" />
+    <ClCompile Include="Source\CSWDamageable.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDamDynSolCol.cpp" />
+    <ClCompile Include="Source\CSWDetermineIntersectionWithObjects.cpp" />
+    <ClCompile Include="Source\CSWDummy.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDynamic.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDynSolCol.cpp" />
+    <ClCompile Include="Source\CSWEngine.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEngineVisualizer.cpp" />
+    <ClCompile Include="Source\CSWEquipment.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEvent.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEventDealable.cpp" />
+    <ClCompile Include="Source\CSWEventManager.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWExecuteCommand.cpp" />
+    <ClCompile Include="Source\CSWExplosionDetectedMessage.cpp" />
+    <ClCompile Include="Source\CSWExplosionVizualizer.cpp" />
+    <ClCompile Include="Source\CSWGPS.cpp" />
+    <ClCompile Include="Source\CSWGyroCompass.cpp" />
+    <ClCompile Include="Source\CSWHomingTorpedo.cpp" />
+    <ClCompile Include="Source\CSWInclRotateCommand.cpp" />
+    <ClCompile Include="Source\CSWInclRotationController.cpp" />
+    <ClCompile Include="Source\CSWLog.cpp" />
+    <ClCompile Include="Source\CSWMagnet.cpp" />
+    <ClCompile Include="Source\CSWMagneticMine.cpp" />
+    <ClCompile Include="Source\CSWMap.cpp" />
+    <ClCompile Include="Source\CSWMapVisualizer.cpp" />
+    <ClCompile Include="Source\CSWMessageCollisionObjects.cpp" />
+    <ClCompile Include="Source\CSWMine.cpp" />
+    <ClCompile Include="Source\CSWMoveForwardCommand.cpp" />
+    <ClCompile Include="Source\CSWMoveUpwardCommand.cpp" />
+    <ClCompile Include="Source\CSWMovingPropertiesSensor.cpp" />
+    <ClCompile Include="Source\CSWObject.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWPassiveSonar.cpp" />
+    <ClCompile Include="Source\CSWPassiveSonarVisualizer.cpp" />
+    <ClCompile Include="Source\CSWPyObjectLoader.cpp" />
+    <ClCompile Include="Source\CSWPythonable.cpp" />
+    <ClCompile Include="Source\CSWRechargeable.cpp" />
+    <ClCompile Include="Source\CSWResourceProvider.cpp" />
+    <ClCompile Include="Source\CSWRock.cpp" />
+    <ClCompile Include="Source\CSWRotateCommand.cpp" />
+    <ClCompile Include="Source\CSWRotationController.cpp" />
+    <ClCompile Include="Source\CSWScanBox.cpp" />
+    <ClCompile Include="Source\CSWScanRay.cpp" />
+    <ClCompile Include="Source\CSWSensor.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSettings.cpp" />
+    <ClCompile Include="Source\CSWSilentApplication.cpp" />
+    <ClCompile Include="Source\CSWSolid.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSonar.cpp" />
+    <ClCompile Include="Source\CSWSoundHomingTorpedo.cpp" />
+    <ClCompile Include="Source\CSWSoundReceiver.cpp" />
+    <ClCompile Include="Source\CSWSoundVizualizer.cpp" />
+    <ClCompile Include="Source\CSWSubmarine.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSystemMessage.cpp" />
+    <ClCompile Include="Source\CSWTextMessage.cpp" />
+    <ClCompile Include="Source\CSWTorpedo.cpp" />
+    <ClCompile Include="Source\CSWTransceiver.cpp" />
+    <ClCompile Include="Source\CSWTransceiverMessage.cpp" />
+    <ClCompile Include="Source\CSWTrigger.cpp" />
+    <ClCompile Include="Source\CSWUtilities.cpp" />
+    <ClCompile Include="Source\CSWVariousCommands.cpp" />
+    <ClCompile Include="Source\CSWWaitCommand.cpp" />
+    <ClCompile Include="Source\CSWWall.cpp" />
+    <ClCompile Include="Source\CSWWeapon.cpp" />
+    <ClCompile Include="Source\CSWWeaponBattery.cpp" />
+    <ClCompile Include="Source\CSWWeaponBatteryVisualizer.cpp" />
+    <ClCompile Include="Source\CSWWeaponSupply.cpp" />
+    <ClCompile Include="Source\CSWWorld.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWorldGuard.cpp" />
+    <ClCompile Include="Source\GreenMine.cpp" />
+    <ClCompile Include="Source\GreenTorpedo.cpp" />
+    <ClCompile Include="Source\InformationView.cpp" />
+    <ClCompile Include="Source\Io\CSWBRImporter.cpp" />
+    <ClCompile Include="Source\Magnet.cpp" />
+    <ClCompile Include="Source\main.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\NewBattleDialog.cpp" />
+    <ClCompile Include="Source\OpenGLView.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="Source\OptionDialog.cpp" />
+    <ClCompile Include="Source\PrecompiledHeader.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\PythonContext.cpp" />
+    <ClCompile Include="Source\RedTorpedo.cpp" />
+    <ClCompile Include="Source\ReplayDialog.cpp" />
+    <ClCompile Include="Source\ReplayView.cpp" />
+    <ClCompile Include="Source\Rock.cpp" />
+    <ClCompile Include="Source\SceneView.cpp" />
+    <ClCompile Include="Source\SystemView.cpp" />
+    <ClCompile Include="Source\Wall.cpp" />
+    <ClCompile Include="Source\WeaponSupply.cpp" />
+    <ClCompile Include="Source\YellowMine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Source\AboutDialog.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Source\ActiveRock.h" />
+    <ClInclude Include="Source\BlackHole.h" />
+    <ClInclude Include="Source\BlueTorpedo.h" />
+    <ClInclude Include="Source\Border.h" />
+    <CustomBuild Include="Source\CodeSubwarsMainWindow.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Source\BuildDetails.h" />
+    <ClInclude Include="Source\Constants.h" />
+    <ClInclude Include="Source\CSWAbsRotCommand.h" />
+    <ClInclude Include="Source\CSWAbsRotController.h" />
+    <ClInclude Include="Source\CSWActiveRock.h" />
+    <ClInclude Include="Source\CSWActiveSonar.h" />
+    <ClInclude Include="Source\CSWActiveSonarVisualizer.h" />
+    <ClInclude Include="Source\CSWActuator.h" />
+    <ClInclude Include="Source\CSWAxialInclRotateCommand.h" />
+    <ClInclude Include="Source\CSWAxialInclRotationController.h" />
+    <ClInclude Include="Source\CSWBattleStatistics.h" />
+    <ClInclude Include="Source\CSWBlackHole.h" />
+    <ClInclude Include="Source\CSWBorder.h" />
+    <ClInclude Include="Source\CSWCamera.h" />
+    <ClInclude Include="Source\CSWCollideable.h" />
+    <ClInclude Include="Source\CSWCollisionDetectedMessage.h" />
+    <ClInclude Include="Source\CSWCommandable.h" />
+    <ClInclude Include="Source\CSWCommands.h" />
+    <ClInclude Include="Source\CSWControlCenter.h" />
+    <ClInclude Include="Source\CSWControlCommand.h" />
+    <ClInclude Include="Source\CSWController.h" />
+    <ClInclude Include="Source\CSWDamageable.h" />
+    <ClInclude Include="Source\CSWDamDynSolCol.h" />
+    <ClInclude Include="Source\CSWDetermineIntersectionWithObjects.h" />
+    <ClInclude Include="Source\CSWDummy.h" />
+    <ClInclude Include="Source\CSWDynamic.h" />
+    <ClInclude Include="Source\CSWDynSolCol.h" />
+    <ClInclude Include="Source\CSWEngine.h" />
+    <ClInclude Include="Source\CSWEngineVisualizer.h" />
+    <ClInclude Include="Source\CSWEquipment.h" />
+    <ClInclude Include="Source\CSWEvent.h" />
+    <ClInclude Include="Source\CSWEventDealable.h" />
+    <ClInclude Include="Source\CSWEventManager.h" />
+    <ClInclude Include="Source\CSWExecuteCommand.h" />
+    <ClInclude Include="Source\CSWExplosionDetectedMessage.h" />
+    <ClInclude Include="Source\CSWExplosionVisualizer.h" />
+    <ClInclude Include="Source\CSWGPS.h" />
+    <ClInclude Include="Source\CSWGyroCompass.h" />
+    <ClInclude Include="Source\CSWHomingTorpedo.h" />
+    <ClInclude Include="Source\CSWICollideable.h" />
+    <ClInclude Include="Source\CSWICommandable.h" />
+    <ClInclude Include="Source\CSWIDamageable.h" />
+    <ClInclude Include="Source\CSWIDynamic.h" />
+    <ClInclude Include="Source\CSWIEquipmentVisualizer.h" />
+    <ClInclude Include="Source\CSWIEventDealable.h" />
+    <ClInclude Include="Source\CSWIForceEmitter.h" />
+    <ClInclude Include="Source\CSWIImpulsEmitter.h" />
+    <ClInclude Include="Source\CSWIMessage.h" />
+    <ClInclude Include="Source\CSWInclRotateCommand.h" />
+    <ClInclude Include="Source\CSWInclRotationController.h" />
+    <ClInclude Include="Source\CSWIPythonable.h" />
+    <ClInclude Include="Source\CSWIRechargeable.h" />
+    <ClInclude Include="Source\CSWIResourceProvider.h" />
+    <ClInclude Include="Source\CSWISolid.h" />
+    <ClInclude Include="Source\CSWISoundEmitter.h" />
+    <ClInclude Include="Source\CSWISoundReceiver.h" />
+    <ClInclude Include="Source\CSWIUpdateable.h" />
+    <ClInclude Include="Source\CSWLog.h" />
+    <ClInclude Include="Source\CSWLogo.h" />
+    <ClInclude Include="Source\CSWMagnet.h" />
+    <ClInclude Include="Source\CSWMagneticMine.h" />
+    <ClInclude Include="Source\CSWMap.h" />
+    <ClInclude Include="Source\CSWMapVisualizer.h" />
+    <ClInclude Include="Source\CSWMessageCollectObjects.h" />
+    <ClInclude Include="Source\CSWMessageCollisionObjects.h" />
+    <ClInclude Include="Source\CSWMessageDrawObjects.h" />
+    <ClInclude Include="Source\CSWMessageDrawOverlayObjects.h" />
+    <ClInclude Include="Source\CSWMessageEmitSoundObjects.h" />
+    <ClInclude Include="Source\CSWMessageInitializeObjects.h" />
+    <ClInclude Include="Source\CSWMessageRecalculateObjects.h" />
+    <ClInclude Include="Source\CSWMessageReceiveEventObjects.h" />
+    <ClInclude Include="Source\CSWMessageStoreObjects.h" />
+    <ClInclude Include="Source\CSWMessageUpdateCollisionObjects.h" />
+    <ClInclude Include="Source\CSWMessageUpdateDamageObjects.h" />
+    <ClInclude Include="Source\CSWMessageUpdateProcessEventObjects.h" />
+    <ClInclude Include="Source\CSWMine.h" />
+    <ClInclude Include="Source\CSWMoveForwardCommand.h" />
+    <ClInclude Include="Source\CSWMoveUpwardCommand.h" />
+    <ClInclude Include="Source\CSWMovingPropertiesSensor.h" />
+    <ClInclude Include="Source\CSWObject.h" />
+    <ClInclude Include="Source\CSWPassiveSonar.h" />
+    <ClInclude Include="Source\CSWPassiveSonarVisualizer.h" />
+    <ClInclude Include="Source\CSWPyActuators.h" />
+    <ClInclude Include="Source\CSWPyCommands.h" />
+    <ClInclude Include="Source\CSWPyCommon.h" />
+    <ClInclude Include="Source\CSWPyEquipment.h" />
+    <ClInclude Include="Source\CSWPyEvents.h" />
+    <ClInclude Include="Source\CSWPyMath.h" />
+    <ClInclude Include="Source\CSWPyObjectLoader.h" />
+    <ClInclude Include="Source\CSWPySensors.h" />
+    <ClInclude Include="Source\CSWPySubmarine.h" />
+    <ClInclude Include="Source\CSWPythonable.h" />
+    <ClInclude Include="Source\CSWPyUtilities.h" />
+    <ClInclude Include="Source\CSWPyWeapons.h" />
+    <ClInclude Include="Source\CSWRechargeable.h" />
+    <ClInclude Include="Source\CSWResourceProvider.h" />
+    <ClInclude Include="Source\CSWRock.h" />
+    <ClInclude Include="Source\CSWRotateCommand.h" />
+    <ClInclude Include="Source\CSWRotationController.h" />
+    <ClInclude Include="Source\CSWScanBox.h" />
+    <ClInclude Include="Source\CSWScanRay.h" />
+    <ClInclude Include="Source\CSWSensor.h" />
+    <ClInclude Include="Source\CSWSettings.h" />
+    <ClInclude Include="Source\CSWSilentApplication.h" />
+    <ClInclude Include="Source\CSWSolid.h" />
+    <ClInclude Include="Source\CSWSonar.h" />
+    <ClInclude Include="Source\CSWSoundHomingTorpedo.h" />
+    <ClInclude Include="Source\CSWSoundReceiver.h" />
+    <ClInclude Include="Source\CSWSoundVisualizer.h" />
+    <ClInclude Include="Source\CSWSubmarine.h" />
+    <ClInclude Include="Source\CSWSubmarineMesh.h" />
+    <ClInclude Include="Source\CSWSystemMessage.h" />
+    <ClInclude Include="Source\CSWTextMessage.h" />
+    <ClInclude Include="Source\CSWTorpedo.h" />
+    <ClInclude Include="Source\CSWTransceiver.h" />
+    <ClInclude Include="Source\CSWTransceiverMessage.h" />
+    <ClInclude Include="Source\CSWTrigger.h" />
+    <ClInclude Include="Source\CSWUtilities.h" />
+    <ClInclude Include="Source\CSWVariousCommands.h" />
+    <ClInclude Include="Source\CSWWaitCommand.h" />
+    <ClInclude Include="Source\CSWWall.h" />
+    <ClInclude Include="Source\CSWWeapon.h" />
+    <ClInclude Include="Source\CSWWeaponBattery.h" />
+    <ClInclude Include="Source\CSWWeaponBatteryVisualizer.h" />
+    <ClInclude Include="Source\CSWWeaponSupply.h" />
+    <CustomBuild Include="Source\CSWWorld.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"_moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"_moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)_moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)_moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"_moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"_moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)_moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)_moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Source\CSWWorldGuard.h" />
+    <ClInclude Include="Source\GreenMine.h" />
+    <ClInclude Include="Source\GreenTorpedo.h" />
+    <CustomBuild Include="Source\InformationView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Source\Io\CSWBRImporter.h" />
+    <ClInclude Include="Source\Magnet.h" />
+    <CustomBuild Include="Source\NewBattleDialog.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Source\OpenGLView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Source\OptionDialog.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Source\PrecompiledHeader.h" />
+    <ClInclude Include="Source\PythonContext.h" />
+    <ClInclude Include="Source\RedTorpedo.h" />
+    <CustomBuild Include="Source\ReplayDialog.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Source\ReplayView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Source\Rock.h" />
+    <CustomBuild Include="Source\SceneView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Source\SystemView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOCing %(Filename) ...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOCing %(Filename) ...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%25qtdir%25\bin\moc.exe -fPrecompiledHeader.h -f"%(Filename)".h "%(RootDir)%(Directory)%(Filename)".h -o "%(RootDir)%(Directory)%(Filename)"Moc.cpp
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RootDir)%(Directory)%(Filename)Moc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="Source\Wall.h" />
+    <ClInclude Include="Source\WeaponSupply.h" />
+    <ClInclude Include="Source\YellowMine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\logo.RES" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

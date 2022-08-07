@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{76ebf914-f764-4ed0-9048-22190a026f21}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Source\Model">
+      <UniqueIdentifier>{1c98797a-bbee-4ef7-bd3b-54a5895657c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Scenegraph">
+      <UniqueIdentifier>{ecab10ef-d885-4d28-9aac-de3e4a549275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Scenegraph\Equipment">
+      <UniqueIdentifier>{2365ca40-884a-41be-95ea-0daea53bc24f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Scenegraph\Equipment\Sensors">
+      <UniqueIdentifier>{ada22fe6-03fd-4538-986c-ee754d424ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Scenegraph\Equipment\Actuators">
+      <UniqueIdentifier>{29718945-8499-42ff-afab-feaf2ced451f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Scenegraph\ContreteObjects">
+      <UniqueIdentifier>{8cc6d389-c822-4043-a9b4-f06367670025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Scenegraph\Weapons">
+      <UniqueIdentifier>{7b078651-7b02-4c1e-9c0e-b7038fd04bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Properties">
+      <UniqueIdentifier>{f318b984-9535-47e6-b5eb-0a34653be9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Properties\Implementations">
+      <UniqueIdentifier>{8861cdf4-41dd-4774-b79b-3a107517d70f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Commands">
+      <UniqueIdentifier>{54d6502e-416b-45b0-a211-7b9553bfedf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Commands\ControlCommands">
+      <UniqueIdentifier>{c24992ac-278d-40e7-ab44-ebb79413b275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Commands\ControlCommands\Controller">
+      <UniqueIdentifier>{7295beb5-114a-4cd2-a65c-d957d61169a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Commands\ControlCommands\Controller\Rotation">
+      <UniqueIdentifier>{af36c886-e9ac-4808-8f94-86d9b629d719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Misc">
+      <UniqueIdentifier>{31bd4f1a-1131-47dd-9c1e-35cd1bf6e054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Event">
+      <UniqueIdentifier>{a8666e28-295f-40f3-86fd-3b793f8113e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Event\Messages">
+      <UniqueIdentifier>{513c5898-8a8a-4c63-9429-7f8c2a7003f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PythonBindings">
+      <UniqueIdentifier>{f82e84ef-757a-42b6-8391-bddb410865ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Dialogs">
+      <UniqueIdentifier>{d9f438a3-50b9-48fd-b301-5ca21aa98d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IO">
+      <UniqueIdentifier>{1fa1942d-3eaf-402b-800f-886e7b64a31c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Widgets">
+      <UniqueIdentifier>{20dce999-182c-41ab-968a-fb2d99bc6f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Widgets\Views">
+      <UniqueIdentifier>{38d53ad1-831e-447d-98c6-00da294074fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Widgets\Visualizer">
+      <UniqueIdentifier>{bd8f3a52-a405-4ddb-84de-724094420ea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{8147e11e-ddd9-42da-8577-5bd2e92dffa4}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{61f33501-312c-4434-b7f5-504d2d9312c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\CodeSubwarsMainWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Constants.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSilentApplication.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PrecompiledHeader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWBattleStatistics.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWExplosionVizualizer.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWLog.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSettings.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSoundVizualizer.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWorld.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWorldGuard.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWActiveRock.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWBlackHole.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWBorder.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWCamera.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDamDynSolCol.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDummy.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDynSolCol.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMagnet.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWObject.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWRock.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWScanBox.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWScanRay.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSubmarine.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWTrigger.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWall.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWeaponSupply.cpp">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWActuator.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWControlCenter.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEquipment.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMap.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSensor.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWTransceiver.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWeaponBattery.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWActiveSonar.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWGPS.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWGyroCompass.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMovingPropertiesSensor.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWPassiveSonar.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSonar.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEngine.cpp">
+      <Filter>Source\Model\Scenegraph\Equipment\Actuators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ActiveRock.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BlackHole.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BlueTorpedo.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Border.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GreenMine.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GreenTorpedo.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Magnet.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RedTorpedo.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Rock.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Wall.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WeaponSupply.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\YellowMine.cpp">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWHomingTorpedo.cpp">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMagneticMine.cpp">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMine.cpp">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSoundHomingTorpedo.cpp">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWTorpedo.cpp">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWeapon.cpp">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWCollideable.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWCommandable.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDamageable.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDynamic.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEventDealable.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWPythonable.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWRechargeable.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWResourceProvider.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSolid.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSoundReceiver.cpp">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWCommands.cpp">
+      <Filter>Source\Model\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWExecuteCommand.cpp">
+      <Filter>Source\Model\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWVariousCommands.cpp">
+      <Filter>Source\Model\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWaitCommand.cpp">
+      <Filter>Source\Model\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWAbsRotCommand.cpp">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWAxialInclRotateCommand.cpp">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWControlCommand.cpp">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWInclRotateCommand.cpp">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMoveForwardCommand.cpp">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMoveUpwardCommand.cpp">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWRotateCommand.cpp">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWAbsRotController.cpp">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWAxialInclRotationController.cpp">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWInclRotationController.cpp">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWRotationController.cpp">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWDetermineIntersectionWithObjects.cpp">
+      <Filter>Source\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMessageCollisionObjects.cpp">
+      <Filter>Source\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWUtilities.cpp">
+      <Filter>Source\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEvent.cpp">
+      <Filter>Source\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEventManager.cpp">
+      <Filter>Source\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWCollisionDetectedMessage.cpp">
+      <Filter>Source\Event\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWExplosionDetectedMessage.cpp">
+      <Filter>Source\Event\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWSystemMessage.cpp">
+      <Filter>Source\Event\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWTextMessage.cpp">
+      <Filter>Source\Event\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWTransceiverMessage.cpp">
+      <Filter>Source\Event\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWPyObjectLoader.cpp">
+      <Filter>Source\PythonBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AboutDialog.cpp">
+      <Filter>Source\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NewBattleDialog.cpp">
+      <Filter>Source\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OptionDialog.cpp">
+      <Filter>Source\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ReplayDialog.cpp">
+      <Filter>Source\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Io\CSWBRImporter.cpp">
+      <Filter>Source\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OpenGLView.cpp">
+      <Filter>Source\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InformationView.cpp">
+      <Filter>Source\Widgets\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ReplayView.cpp">
+      <Filter>Source\Widgets\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneView.cpp">
+      <Filter>Source\Widgets\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SystemView.cpp">
+      <Filter>Source\Widgets\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWActiveSonarVisualizer.cpp">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWEngineVisualizer.cpp">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWMapVisualizer.cpp">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWPassiveSonarVisualizer.cpp">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSWWeaponBatteryVisualizer.cpp">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PythonContext.cpp">
+      <Filter>Source\PythonBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BuildDetails.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Constants.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSilentApplication.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PrecompiledHeader.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWBattleStatistics.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWExplosionVisualizer.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWLog.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSettings.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSoundVisualizer.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWWorldGuard.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWActiveRock.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWBlackHole.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWBorder.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWCamera.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWDamDynSolCol.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWDummy.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWDynSolCol.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMagnet.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWObject.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWRock.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWScanBox.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWScanRay.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSubmarine.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWTrigger.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWWall.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWWeaponSupply.h">
+      <Filter>Source\Model\Scenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWActuator.h">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWControlCenter.h">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWEquipment.h">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMap.h">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSensor.h">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWTransceiver.h">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWWeaponBattery.h">
+      <Filter>Source\Model\Scenegraph\Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWActiveSonar.h">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWGPS.h">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWGyroCompass.h">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMovingPropertiesSensor.h">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPassiveSonar.h">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSonar.h">
+      <Filter>Source\Model\Scenegraph\Equipment\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWEngine.h">
+      <Filter>Source\Model\Scenegraph\Equipment\Actuators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ActiveRock.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BlackHole.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BlueTorpedo.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Border.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GreenMine.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GreenTorpedo.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Magnet.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RedTorpedo.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Rock.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Wall.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WeaponSupply.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\YellowMine.h">
+      <Filter>Source\Model\Scenegraph\ContreteObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWHomingTorpedo.h">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMagneticMine.h">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMine.h">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSoundHomingTorpedo.h">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWTorpedo.h">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWWeapon.h">
+      <Filter>Source\Model\Scenegraph\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWICollideable.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWICommandable.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIDamageable.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIDynamic.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIEventDealable.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIForceEmitter.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIImpulsEmitter.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIPythonable.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIRechargeable.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIResourceProvider.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWISolid.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWISoundEmitter.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWISoundReceiver.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIUpdateable.h">
+      <Filter>Source\Model\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWCollideable.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWCommandable.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWDamageable.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWDynamic.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWEventDealable.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPythonable.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWRechargeable.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWResourceProvider.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSolid.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSoundReceiver.h">
+      <Filter>Source\Model\Properties\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWCommands.h">
+      <Filter>Source\Model\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWExecuteCommand.h">
+      <Filter>Source\Model\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWVariousCommands.h">
+      <Filter>Source\Model\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWWaitCommand.h">
+      <Filter>Source\Model\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWAbsRotCommand.h">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWAxialInclRotateCommand.h">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWControlCommand.h">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWInclRotateCommand.h">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMoveForwardCommand.h">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMoveUpwardCommand.h">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWRotateCommand.h">
+      <Filter>Source\Model\Commands\ControlCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWController.h">
+      <Filter>Source\Model\Commands\ControlCommands\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWAbsRotController.h">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWAxialInclRotationController.h">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWInclRotationController.h">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWRotationController.h">
+      <Filter>Source\Model\Commands\ControlCommands\Controller\Rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWDetermineIntersectionWithObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageCollectObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageCollisionObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageDrawObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageDrawOverlayObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageEmitSoundObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageInitializeObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageRecalculateObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageReceiveEventObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageStoreObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageUpdateCollisionObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageUpdateDamageObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMessageUpdateProcessEventObjects.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWUtilities.h">
+      <Filter>Source\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWEvent.h">
+      <Filter>Source\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWEventManager.h">
+      <Filter>Source\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIMessage.h">
+      <Filter>Source\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWCollisionDetectedMessage.h">
+      <Filter>Source\Event\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWExplosionDetectedMessage.h">
+      <Filter>Source\Event\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSystemMessage.h">
+      <Filter>Source\Event\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWTextMessage.h">
+      <Filter>Source\Event\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWTransceiverMessage.h">
+      <Filter>Source\Event\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyActuators.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyCommands.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyCommon.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyEquipment.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyEvents.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyMath.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyObjectLoader.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPySensors.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPySubmarine.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyUtilities.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPyWeapons.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Io\CSWBRImporter.h">
+      <Filter>Source\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWActiveSonarVisualizer.h">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWEngineVisualizer.h">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWIEquipmentVisualizer.h">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWMapVisualizer.h">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWPassiveSonarVisualizer.h">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWWeaponBatteryVisualizer.h">
+      <Filter>Source\Widgets\Visualizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWLogo.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CSWSubmarineMesh.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PythonContext.h">
+      <Filter>Source\PythonBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BuildDetails.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\logo.RES">
+      <Filter>Ressourcendateien</Filter>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Source\CodeSubwarsMainWindow.h">
+      <Filter>Source</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\CSWWorld.h">
+      <Filter>Source\Model</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\AboutDialog.h">
+      <Filter>Source\Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\NewBattleDialog.h">
+      <Filter>Source\Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\OptionDialog.h">
+      <Filter>Source\Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\ReplayDialog.h">
+      <Filter>Source\Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\OpenGLView.h">
+      <Filter>Source\Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\InformationView.h">
+      <Filter>Source\Widgets\Views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\ReplayView.h">
+      <Filter>Source\Widgets\Views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\SceneView.h">
+      <Filter>Source\Widgets\Views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Source\SystemView.h">
+      <Filter>Source\Widgets\Views</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

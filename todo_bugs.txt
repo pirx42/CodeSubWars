@@ -1,0 +1,59 @@
+2005-05-11  Bug   Done  Lo    The physics engine sometimes does not prevent interpenetrating of colliding objects. (Should be done by integrating 
+                              NxPhysics)
+                              Solved by using solid 3.5.4 lib and makes the impuls value of a collision depend on the differnce velocity and the 
+                              penetration depth.
+2005-05-11  Bug   Done  Lo    Under some conditions objects can escape from battle area. This regards with the bug above.
+2005-05-11  Bug   Done        Specialized commands cannot be implemented in python.
+2005-05-11  Bug   Done        Some control manuvers, e.g. rotation by angles, takes much time because of implementation 
+                              of simple proportional controllers. I have some problems implementing a pid controller
+                              that works stable when the time ratio changes.
+2005-05-11  Bug   Done  Lo    Threads that are created and started within python may cause the framework to crash.
+2005-05-11  Bug   Done        The large application icon is not set.
+2005-05-11  Bug   Done        The menu item Help does not work correctly.
+2005-11-05  Bug   Done        The sensors return wrong results on construction of the submarine. This is becaused the submarine is constructed
+                              at position 0, 0, 0 and then moved to random position. Now method initialize() added. 
+2005-11-27  Bug         Lo    On slow machines (< 500MHz): When set time ratio over about 6 some events are not processed by submarines.
+2005-11-28  Todo  Done  Hi    The WorldGuard should be extended by a method for detection battle end (timeout, only one submarine(last man standing), 
+                              only one time team (last team standing)). A dialog or log should be print out if a battle ended. this must also detect 
+                              inactive submarines so that the battle is finalized too. 
+                              A battle end is only detected if one submarin of team is alive.
+2005-11-28  Todo  Done        The file format of records must be improved to file size. no more redundant data (object names) should be stored 
+                              in each time step. This was solved using compressed data ouput with the same format. Reducing redundance would be also
+                              heavyly decrease the file size.
+2005-11-28  Todo  Done  Hi    A dialog should be integrated that allows the user to choose the submarines for the battle from available submarines.
+                              The dialog should also let the user choose battle type with timeout.
+2005-12-05  Todo  Done        The detail window should be removed if it is moved to zero size.
+2005-12-05  Todo        Lo    The activation radius of explosions of mines should be extended. A trigger mesh should be integrated. this is in common 
+                              with active sonar sensors. (Should be done by integrating NxPhysics)
+2005-12-05  Bug   Done        CSWFireCommand should have arm time parameter.
+2005-12-05  Todo  Done  Hi    The documentation should have informations about the calculating factors for determining capacity of weapons, 
+                              engine power, etc. With this the user can better decide which submarine length is useful.
+2005-12-05  Todo  Done        Recording of replay should be selectable by user in preferences. initially this should be on.
+2005-12-08  Todo        Lo    The world should be able to build from xml-file. Therefore the xml-file format must be specified. Im/Exporter must be implemented.
+2005-12-10  Bug   Done        On initial placing of objects must be checked whether other object are in that near.
+2005-12-13  Todo  Done  Hi    Redesign: sensor must be checked in the same dtTest as the rest of the world. therefor the sensor objects (trigger)(rays for 
+                              active sonar) should have another response function.
+2006-01-05  Bug   Done        Done commands could be stored in executed queue of command processor. The life time of such a command could be longer than
+                              referenced member variables (e.g. an engine). Therfor the pointer to the controlling stuff (e.g. engine) should be weak.
+                              This leads to a problem with python. When getting a shared_ptr through python from a c++ shared_ptr object the reference 
+                              count of the c++ shared_ptr is not increased (i think).
+                              example:
+                              in python:
+                              self.getCommandProcessor().execute(CSWFireCommand.create(self.getFrontLeftWeaponBattery(), 5, None))
+                              when storing weak_ptr to weapon battery in fire command later in execution the weak_ptr::lock() return 0. The same in c++ works fine
+                              (as expected).
+                              Problem solved by using "by reference"-parameters for command creations.
+2006-01-05  Bug   Done        If a submarine dies while currently recharging, the recharge provider continue recharing the object or hold it in recharge list.
+                              (Regarding to bug above)
+2006-01-07  Todo        Mid   Integrate necessary stuff to be able to use specific test submarines that test separate functionality. These submarines should not
+                              be examples.
+2006-01-08  Todo        Lo    Rotation commmand/controller must be changed to hold weak_ptr to ControlCenter and Engine(s) the same way as CSWFireCommand.
+2006-01-15  Bug         Lo 	  Cause of beeing able to create references to itself through python (e.g. by holden self in member variable of submarine)
+                              circular references could be created. This results in not freeing memory of submarine also if stopping a battle. This could 
+                              solved (not really) by storing references using getSharedThis(). Instead weakref.ref(...) should be useable, but isnt.
+                              This should be solved by calling Py_Finalize() on stopping the battle. But boost::python currently does support this.
+2006-08-06  Bug         Mid   By using threads enabled within python, all methods (also destructor) called to python must be enclosed by Acquire/ReleaseThread. 
+                              Objects are held as shared_ptr in methods (InformationView, CollisionDetection, etc.) for a short time. On finalizeBattle all objects
+                              are destructed with respect to Acquire/ReleaseThread. In rare cases a shared_ptr held in another method causes that the object
+                              is not destructed in finalizeBattle. In this case the Acquire/ReleaseThread stuff is ignored and the application crashes.
+                              Therefor the structure must be changed to ensure that the destruction of an object is always enclosed by Acquire/ReleaseThread.

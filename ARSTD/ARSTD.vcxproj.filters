@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Structures">
+      <UniqueIdentifier>{4009fbd6-0269-4a00-886a-dd330da8daeb}</UniqueIdentifier>
+      <Extensions>*.h,*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{9bd08d33-a63d-4f90-a0c8-9806acbf90d5}</UniqueIdentifier>
+      <Extensions>*.h,*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{05b62ac4-3f93-47c4-af49-14f66a29db95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{18656066-59f1-428a-b604-3f93d0a98427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{ef8242ee-cb48-4905-9dbe-05d5652f92ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3309d5c7-84ab-43b2-abc6-99a8eac7b9d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{317120b1-d591-48f0-803b-c1ac669a3a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{f5c53ba2-79c2-46d5-9a9f-eb546d4d418a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ARSTD\Structures\Element.cpp">
+      <Filter>Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="ARSTD\Structures\Node.cpp">
+      <Filter>Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Arstd\Misc\PIDController.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ARSTD\Misc\Time.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Arstd\Misc\Version.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Arstd\Command\BasicCommands.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ARSTD\Command\CommandProcessor.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Arstd\Command\CommandProcessorContext.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ARSTD\Command\MacroCommand.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ARSTD\OpenGL\OpenGLTools.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Arstd\Geometry\Mesh.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Arstd\Math\Math.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ARSTD\Structures\Element.h">
+      <Filter>Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Structures\Node.h">
+      <Filter>Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Misc\PIDController.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Misc\Time.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Misc\Utilities.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Misc\Version.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Command\BasicCommands.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Command\Command.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Command\CommandProcessor.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Command\CommandProcessorContext.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Command\ICommandHandler.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Command\MacroCommand.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Message\Message.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\OpenGL\OpenGLTools.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Common\Size3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Common\Types.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Geometry\AxisAlignedBoundingBox.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Geometry\BoundingBox.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Geometry\Mesh.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Geometry\Line3.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Geometry\Plane.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Geometry\Ray3.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="ARSTD\Geometry\Rectangle3.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Geometry\Segment3.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Constants.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Matrix33.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Matrix33_Impl.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Matrix44.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Matrix44_Impl.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Matrix_Impl.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Quaternion_Impl.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Vector3_Impl.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Arstd\Math\Vector4_Impl.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+what must be done when the physics stuff from novodex should be integrated?
+
+
+-wie kommen die objekte an die physik daten? z.b sensoren mussen auf physik zeug zugreifen koennen. cswobjecte müssen auf 
+ positionen zugrefen koennen...
+->
+
+ 
+-was passiert wenn ein objekt in der welt neu erstellt wird? gibt es probleme mit dem initialisieren, etc.?
+->eigentlich nicht! sollte alles gehen.
+
+
+-was passiert wenn ein object geloescht wird? gibt es problemen mit dem separaten physic thread?
+->erstmal kein separaten thread verwenden!
+
+
+-wie kann man dafür sorgen dass unterschiedliche time steps im separaten physic thread verarbeitet werden koennen?
+ was muss bei der syncronisierung bzw. dem zugriff auf gemeinsame daten beachtet werden?
+->kein separater thread. unterschiedliche timesteps festlegen durch: 
+
+  void RunPhysics()
+  {
+  	// Update the time step
+  	NxReal deltaTime = UpdateTime();
+  
+  	// Run collision and dynamics for delta time since the last frame
+  	gScene->simulate(deltaTime);	
+  	gScene->flushStream();
+  	gScene->fetchResults(NX_RIGID_BODY_FINISHED, true);
+  }
+
+
+-wie muss das design aussehen (classenstrukturen etc.), auch in der hinsicht dass trigger objecte integriert sind?
+ diese trigger sind dann teilweise implementierungen des sensoren (active sonar).
+->active sonar sollte erstmal genauso wie bisher arbeiten (d.h. mit einem strahl). dazu muss verwendet werden:
+	// Get the closest shape
+	NxShape* closestShape = gScene->raycastClosestShape(ray, NX_ALL_SHAPES, hit, groupFlag);
