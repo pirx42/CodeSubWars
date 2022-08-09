@@ -1,4 +1,5 @@
-CodeSubWars 0.4.7 beta
+CodeSubWars
+===================
 
 A physics based three dimensional programming game.
 
@@ -7,19 +8,19 @@ Content of archive
 ------------------
 The archive contains the following file structure (only important files/folders are 
 described):
-root
-  +-CodeSubWars.exe   The main executable.
-  +-changes.md        The detailed list of changes.
-  +-preferences.cfg   The current stored preferences.
-  +-readme.md         This file.
-  +-doc
-    +-Manual.pdf      The common description of the codesubwars environment.
-    +-html
-      +-index.html    The main entry point for the html based reference documentation.
-  +-plugins           Qt plugins
-  +-pylib             The python library main folder containing useful common python 
+- root
+  - CodeSubWars.exe   The main executable.
+  - changes.md        The detailed list of changes.
+  - preferences.cfg   The current stored preferences.
+  - readme.md         This file.
+  - doc
+    - Manual.pdf      The common description of the codesubwars environment.
+    - html
+      - index.html    The main entry point for the html based reference documentation.
+  - plugins           Qt plugins
+  - pylib             The python library main folder containing useful common python 
                       code for implementing submarines.
-  +-submarines        This folder contains available subarmines that can be loaded on 
+  - submarines        This folder contains available subarmines that can be loaded on 
                       start of a battle.
   
 
