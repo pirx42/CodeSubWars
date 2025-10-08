@@ -255,9 +255,9 @@ namespace CodeSubWars
       return CSWUtilities::SubmarineFileContainer();
 
     // scan given directory
-    for (int i = 0; i < list.size(); ++i) 
+    for (const auto& fileInfo : list) 
     {
-      QFileInfo fi = list.at(i);
+      QFileInfo fi = fileInfo;
   
       if (fi.isFile() && fi.suffix() == "py")
       {
