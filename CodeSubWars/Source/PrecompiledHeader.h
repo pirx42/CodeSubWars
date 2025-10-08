@@ -6,7 +6,9 @@
 #pragma warning (disable: 4267)
 
 // c++ and c standard lib
+#ifdef _WIN32
 #include <conio.h>
+#endif
 #include <algorithm>
 #include <functional>
 #include <list>
@@ -16,7 +18,6 @@
 #include <cassert>
 #include <cmath>
 #include <sstream>
-#include <strstream>
 #include <numeric>
 #include <iomanip>
 #include <iostream>

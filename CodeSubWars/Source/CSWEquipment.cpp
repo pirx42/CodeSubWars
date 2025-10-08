@@ -105,7 +105,7 @@ namespace CodeSubWars
 
   QWidget* CSWEquipment::getInformationWidget(QWidget* pParent)
   {
-    return NULL;
+    return nullptr;
   }
 
 

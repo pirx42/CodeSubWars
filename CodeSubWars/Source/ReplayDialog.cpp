@@ -102,7 +102,7 @@ namespace CodeSubWars
     }
     else
     {
-      QMessageBox::information(NULL, "Error", "CSW battle record file could not read successfully.");
+      QMessageBox::information(nullptr, "Error", "CSW battle record file could not read successfully.");
       m_fMinTime = 0;
       m_fMaxTime = 0;
     }

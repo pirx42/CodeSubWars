@@ -101,10 +101,9 @@ namespace CodeSubWars
         is.read(reinterpret_cast<char*>(&nNameSize), 2);
         if (is.eof() || is.fail())
           return true;
-        char* buff = new char[nNameSize];
-        is.read(buff, nNameSize);
-        objData.strName = std::string(buff, nNameSize);
-        delete [] buff;
+        std::vector<char> buff(nNameSize);
+        is.read(buff.data(), nNameSize);
+        objData.strName = std::string(buff.data(), nNameSize);
         if (is.eof() || is.fail())
           return true;
 

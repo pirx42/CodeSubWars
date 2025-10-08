@@ -156,7 +156,7 @@ namespace CodeSubWars
 
 
   CSWActiveSonarVisualizer::CSWActiveSonarVisualizer(QWidget* pParent, CSWActiveSonar::PtrType pActiveSonar)
-  : QWidget(pParent, NULL)
+  : QWidget(pParent, nullptr)
   {
     QHBoxLayout* pLayout = new QHBoxLayout(this); 
     pLayout->setMargin(1);

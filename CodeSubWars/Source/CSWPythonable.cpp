@@ -56,7 +56,7 @@ namespace CodeSubWars
 
 
   CSWPythonable::CSWPythonable()
-  : m_pThreadState(NULL)
+  : m_pThreadState(nullptr)
   {
   }
 

@@ -204,7 +204,7 @@ namespace CodeSubWars
   : CSWSonar(strName, matBaseTObject),
     m_pSoundReceiver(CSWSoundReceiver::create()),
     m_LastScanValues(50),
-    m_pVisualizer(NULL),
+    m_pVisualizer(nullptr),
     m_fAdjustingEndTime(0),
     m_bFoundMaximum(false),
     m_bFindingMaximum(false)

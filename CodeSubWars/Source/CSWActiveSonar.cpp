@@ -269,7 +269,7 @@ namespace CodeSubWars
     m_bTargetDetected(false),
     m_vecTargetPosition(0, 0, 0),
     m_LastScans(50),
-    m_pVisualizer(NULL),
+    m_pVisualizer(nullptr),
     m_pScanRay(CSWScanRay::create(strName + ".ScanRay", Matrix44D(Vector3D(0, 0, 60)), MAX_DISTANCE - 60))
   {
     attach(m_pScanRay);

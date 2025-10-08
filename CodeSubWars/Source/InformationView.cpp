@@ -537,7 +537,7 @@ namespace CodeSubWars
     {
       QList<QWidget*> widgets;
 
-      infoField.pEquipmentInformationWidget = pObj->getInformationWidget(NULL);
+      infoField.pEquipmentInformationWidget = pObj->getInformationWidget(nullptr);
       if (!infoField.pEquipmentInformationWidget)
         infoField.pEquipmentInformationWidget = new QLabel("n.a.");
       widgets.push_back(infoField.pEquipmentInformationWidget);

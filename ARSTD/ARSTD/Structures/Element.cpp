@@ -13,7 +13,7 @@ namespace ARSTD
 
   Element::Element(const std::string& strName)
   : m_strName(strName),
-    m_pParent(NULL)
+    m_pParent(nullptr)
   {
   }
 
@@ -68,7 +68,7 @@ namespace ARSTD
 
   void Element::resetParent()
   {
-    m_pParent = NULL;
+    m_pParent = nullptr;
   }
 
 

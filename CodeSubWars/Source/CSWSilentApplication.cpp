@@ -134,7 +134,12 @@ namespace CodeSubWars
   
     CSWLog::getInstance()->log("running ... (press ESC to stop)");
     std::cout << "\n";
+#ifdef _WIN32
     while (!_kbhit() && CSWWorld::getInstance()->isBattleRunning())
+#else
+    // On non-Windows systems, just run until battle ends
+    while (CSWWorld::getInstance()->isBattleRunning())
+#endif
     {
       //recalculate the world
       CSWWorld::getInstance()->recalculate();

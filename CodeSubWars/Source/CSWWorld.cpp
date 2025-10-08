@@ -516,7 +516,7 @@ namespace CodeSubWars
     m_bBattleInitialized(false),
     m_mtxRecalc(QMutex::Recursive),
     m_mtxDraw(QMutex::Recursive),
-    m_pyMainState(NULL),
+    m_pyMainState(nullptr),
     m_CalculateTimes(200),
     m_TransformCalculateTimes(200),
     m_RecalcTimes(200),

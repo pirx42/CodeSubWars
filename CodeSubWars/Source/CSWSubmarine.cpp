@@ -356,7 +356,7 @@ namespace CodeSubWars
 
   CSWSubmarine::CSWSubmarine(const std::string& strName, const Matrix44D& matBaseTObject, double fLength)
   : CSWDamDynSolCol(strName, matBaseTObject,
-                    Mesh::readSTL(std::istrstream(reinterpret_cast<const char*>(SUBMARINE_MESH), sizeof(SUBMARINE_MESH)))->transformed(Matrix44D(Vector4D(fLength, 0, 0, 0),
+                    Mesh::readSTL(std::istringstream(std::string(reinterpret_cast<const char*>(SUBMARINE_MESH), sizeof(SUBMARINE_MESH))))->transformed(Matrix44D(Vector4D(fLength, 0, 0, 0),
                                                                                                                                                  Vector4D(0, fLength, 0, 0),
                                                                                                                                                  Vector4D(0, 0, fLength, 0),
                                                                                                                                                  Vector4D(0, 0, 0, 1))),

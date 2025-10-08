@@ -48,7 +48,7 @@ namespace CodeSubWars
   CodeSubwarsMainWindow::~CodeSubwarsMainWindow()
   {
     CSWWorld::getInstance()->finalizeWorld();
-    CSWLog::getInstance()->setLogOutput(NULL);
+    CSWLog::getInstance()->setLogOutput(nullptr);
   }
 
 
@@ -245,19 +245,19 @@ namespace CodeSubWars
 
   void CodeSubwarsMainWindow::help()
   {
-    ShellExecuteA(NULL, NULL, (LPCSTR)(qApp->applicationDirPath() + "/doc/html/index.html").toStdString().c_str(), NULL, NULL, SW_SHOWNORMAL);
+    ShellExecuteA(nullptr, nullptr, (LPCSTR)(qApp->applicationDirPath() + "/doc/html/index.html").toStdString().c_str(), nullptr, nullptr, SW_SHOWNORMAL);
   }
 
 
   void CodeSubwarsMainWindow::manual()
   {
-    ShellExecuteA(NULL, NULL, (LPCSTR)(qApp->applicationDirPath() + "/doc/Manual.pdf").toStdString().c_str(), NULL, NULL, SW_SHOWNORMAL);
+    ShellExecuteA(nullptr, nullptr, (LPCSTR)(qApp->applicationDirPath() + "/doc/Manual.pdf").toStdString().c_str(), nullptr, nullptr, SW_SHOWNORMAL);
   }
 
 
   void CodeSubwarsMainWindow::website()
   {
-    ShellExecuteA(NULL, NULL, (LPCSTR)Constants::WEBSITE.toStdString().c_str(), NULL, NULL, SW_SHOWNORMAL);
+    ShellExecuteA(nullptr, nullptr, (LPCSTR)Constants::WEBSITE.toStdString().c_str(), nullptr, nullptr, SW_SHOWNORMAL);
   }
 
 
@@ -324,13 +324,13 @@ namespace CodeSubWars
       QSplitter* pHorizontalSplitter = new QSplitter(Qt::Horizontal);
       pVerticalSplitter->addWidget(pHorizontalSplitter);
 
-        m_pMainSceneView = new SceneView(NULL, true);
+        m_pMainSceneView = new SceneView(nullptr, true);
         pHorizontalSplitter->addWidget(m_pMainSceneView);
 
         QSplitter* pDetailVerticalSplitter = new QSplitter(Qt::Vertical);
         pHorizontalSplitter->addWidget(pDetailVerticalSplitter);
       
-          m_pDetailUpperSceneView = new SceneView(NULL, false);
+          m_pDetailUpperSceneView = new SceneView(nullptr, false);
           pDetailVerticalSplitter->addWidget(m_pDetailUpperSceneView);
           m_pDetailLowerInformationView = new InformationView;
           pDetailVerticalSplitter->addWidget(m_pDetailLowerInformationView);
@@ -382,7 +382,7 @@ namespace CodeSubWars
       m_pTimeSlider->setTickPosition(QSlider::TicksBelow);
       pHBoxLayout->addWidget(m_pTimeSlider);
 
-    m_pSystemView = new SystemView(NULL);
+    m_pSystemView = new SystemView(nullptr);
     statusBar()->addPermanentWidget(m_pSystemView);
   
     connect(m_pTimeSlider, SIGNAL(valueChanged(int)), this, SLOT(setTimeRatio(int)));

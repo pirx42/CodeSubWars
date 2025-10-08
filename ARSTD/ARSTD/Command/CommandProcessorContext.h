@@ -31,7 +31,7 @@ namespace ARSTD
       //adds a command to the end
       bool addCommand(std::shared_ptr<Command> pCommand);
       
-      //returns the command the is currently executing. returns NULL if no command is currently executing.
+      //returns the command the is currently executing. returns nullptr if no command is currently executing.
       std::shared_ptr<Command> getCurrentExecutingCommand() const;
 
       //empties the whole context

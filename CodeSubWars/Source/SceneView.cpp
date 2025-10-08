@@ -107,7 +107,7 @@ namespace CodeSubWars
       //handle mouse pressing
       float fIntersection = 0;
       Vector3F vecNormal;
-      void* pCastResult = DT_RayCast(CSWWorld::getInstance()->getScene(), NULL,
+      void* pCastResult = DT_RayCast(CSWWorld::getInstance()->getScene(), nullptr,
                                      static_cast<Vector3F>(resultRay.second.getPos()).pData,
                                      static_cast<Vector3F>(resultRay.second.getPos() + resultRay.second.getDir()*100000.0).pData,
                                      1.0, &fIntersection, vecNormal.pData);    

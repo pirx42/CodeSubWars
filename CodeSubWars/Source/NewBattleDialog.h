@@ -14,7 +14,7 @@ namespace CodeSubWars
       Q_OBJECT
 
     public:
-      NewBattleDialog(QString strPath, QWidget* pParent = NULL);
+      NewBattleDialog(QString strPath, QWidget* pParent = nullptr);
       virtual ~NewBattleDialog();
 
       CSWUtilities::SubmarineFileContainer getSubmarines() const;

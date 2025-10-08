@@ -139,7 +139,7 @@ namespace CodeSubWars
     DT_RemoveObject(CSWWorld::getInstance()->getScene(), m_hDTObject);
     DT_DestroyObject(m_hDTObject);
     DT_DeleteShape(m_hDTShape);
-    m_hDTShape = NULL;
+    m_hDTShape = nullptr;
         
     m_bInitialized = false;
     return true;
@@ -150,7 +150,7 @@ namespace CodeSubWars
   : m_pCollisionMesh(pCollisionMesh),
     m_BoundingBox(pCollisionMesh->getAxisAlignedBoundingBox()),
     m_bInitialized(false),
-    m_hDTShape(NULL),
+    m_hDTShape(nullptr),
     m_bHit(false),
     m_matObjectTCollisionShape(Matrix44D::IDENTITY)
   {

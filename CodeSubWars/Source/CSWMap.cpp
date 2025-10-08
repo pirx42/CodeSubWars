@@ -243,7 +243,7 @@ namespace CodeSubWars
 
   CSWMap::CSWMap(const std::string& strName)
   : CSWEquipment(strName, Matrix44D(), 0, 0),
-    m_pVisualizer(NULL)
+    m_pVisualizer(nullptr)
   {
   }
 

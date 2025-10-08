@@ -151,7 +151,7 @@ namespace CodeSubWars
 
 
   CSWPassiveSonarVisualizer::CSWPassiveSonarVisualizer(QWidget* pParent, CSWPassiveSonar::PtrType pPassiveSonar)
-  : QWidget(pParent, NULL)
+  : QWidget(pParent, nullptr)
   {
     QHBoxLayout* pLayout = new QHBoxLayout(this); 
     pLayout->setMargin(1);
