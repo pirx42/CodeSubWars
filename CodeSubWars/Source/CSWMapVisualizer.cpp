@@ -193,7 +193,7 @@ namespace CodeSubWars
 
 
   CSWMapVisualizer::CSWMapVisualizer(QWidget* pParent, CSWMap::PtrType pMap)
-  : QWidget(pParent, NULL)
+  : QWidget(pParent, nullptr)
   {
     QHBoxLayout* pLayout = new QHBoxLayout(this); 
     pLayout->setMargin(1);

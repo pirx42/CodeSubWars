@@ -82,7 +82,7 @@ namespace CodeSubWars
 
     DT_AddDefaultResponse(CSWWorld::getInstance()->getResponseTable(), 
                           &(CSWMessageInitializeCollisionObjects::collide),
-                          DT_DEPTH_RESPONSE, NULL);
+                          DT_DEPTH_RESPONSE, nullptr);
   }
 
 

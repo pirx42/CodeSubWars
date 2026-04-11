@@ -114,7 +114,7 @@ namespace CodeSubWars
     m_fMaxForce(size.getVolume()*1e+6),
     m_fIntensity(0),
     m_bAllowDirectionChanges(bAllowDirectionChanges),
-    m_pVisualizer(NULL)
+    m_pVisualizer(nullptr)
   {
   }
 

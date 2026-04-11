@@ -183,7 +183,7 @@ namespace CodeSubWars
     Vector3D vecStart = aabb.getMin() + Vector3D(aabb.getWidth()*0.5, aabb.getHeight()*0.5, fRadius);
     Vector3D vecEnd = aabb.getMax() - Vector3D(aabb.getWidth()*0.5, aabb.getHeight()*0.5, fRadius);
 
-    DT_ShapeHandle hDTShape = NULL;
+    DT_ShapeHandle hDTShape = nullptr;
     Mesh::PtrType pCollisionMesh;
     if (vecStart.getDistance(vecEnd) < EPSILON)
     {

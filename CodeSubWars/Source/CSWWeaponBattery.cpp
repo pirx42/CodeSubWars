@@ -268,7 +268,7 @@ namespace CodeSubWars
     m_fLeastWeaponLaunchDelay(1.0),
     m_fLastRechargeTime(0),
     m_Cnt(0),
-    m_pVisualizer(NULL)
+    m_pVisualizer(nullptr)
   {
   }
 

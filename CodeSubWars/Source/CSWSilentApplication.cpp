@@ -41,11 +41,15 @@ namespace CodeSubWars
         }
         case WORLD_TYPE:
         {
-          int t = atoi(result.second.c_str());
-          if (t >= 1 && t <= 5)
-            m_WorldType = static_cast<CSWWorld::WorldType>(t);
-          else
-            m_bParametersValid = false;        
+          try {
+            int t = std::stoi(result.second);
+            if (t >= 1 && t <= 5)
+              m_WorldType = static_cast<CSWWorld::WorldType>(t);
+            else
+              m_bParametersValid = false;
+          } catch (...) {
+            m_bParametersValid = false;
+          }
           break;
         }
         case BATTLE_TYPE:
@@ -60,20 +64,28 @@ namespace CodeSubWars
         }
         case TEAMSIZE_TYPE:
         {
-          int t = atoi(result.second.c_str());
-          if (t == 3 || t == 5 || t == 10)
-            m_nTeamSize = t;
-          else
-            m_bParametersValid = false;        
+          try {
+            int t = std::stoi(result.second);
+            if (t == 3 || t == 5 || t == 10)
+              m_nTeamSize = t;
+            else
+              m_bParametersValid = false;
+          } catch (...) {
+            m_bParametersValid = false;
+          }
           break;
         }
         case TIMESTEP_TYPE:
         {
-          double t = atof(result.second.c_str());
-          if (t >= 0.01 && t <= 0.1)
-            m_fTimeStep = t;
-          else
-            m_bParametersValid = false;        
+          try {
+            double t = std::stod(result.second);
+            if (t >= 0.01 && t <= 0.1)
+              m_fTimeStep = t;
+            else
+              m_bParametersValid = false;
+          } catch (...) {
+            m_bParametersValid = false;
+          }
           break;
         }
       }
@@ -134,7 +146,12 @@ namespace CodeSubWars
   
     CSWLog::getInstance()->log("running ... (press ESC to stop)");
     std::cout << "\n";
+#ifdef _WIN32
     while (!_kbhit() && CSWWorld::getInstance()->isBattleRunning())
+#else
+    // On non-Windows systems, just run until battle ends
+    while (CSWWorld::getInstance()->isBattleRunning())
+#endif
     {
       //recalculate the world
       CSWWorld::getInstance()->recalculate();

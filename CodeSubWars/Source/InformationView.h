@@ -19,7 +19,7 @@ namespace CodeSubWars
       Q_OBJECT
 
     public:
-      InformationView(QWidget* pParent = NULL);
+      InformationView(QWidget* pParent = nullptr);
 
       virtual ~InformationView();
 

@@ -16,7 +16,7 @@ namespace CodeSubWars
       Q_OBJECT
 
     public:
-      ReplayDialog(QString strFileName, QWidget* pParent = NULL);
+      ReplayDialog(QString strFileName, QWidget* pParent = nullptr);
       virtual ~ReplayDialog();
 
       const CSWBRImporter::TimeSliceData& getData() const;

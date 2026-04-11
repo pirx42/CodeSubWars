@@ -32,7 +32,7 @@ namespace CodeSubWars
 
   void CSWLog::resetLogOutput()
   {
-    m_pTextEdit = NULL;
+    m_pTextEdit = nullptr;
   }
 
 
@@ -50,7 +50,7 @@ namespace CodeSubWars
 
 
   CSWLog::CSWLog()
-  : m_pTextEdit(NULL)
+  : m_pTextEdit(nullptr)
   {
     QDir().mkdir("log");
     m_LogFile.open("log/events.log", std::ios::out | std::ios::app);
